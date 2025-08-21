@@ -22,13 +22,6 @@ It demonstrates advanced skills in **SAS, Python, Tableau, and epidemiological a
 - **`Underlying Cause of Death, 2018–2023, Single Race.csv`** → Detailed dataset for stratified cause-of-death analysis.  
 - **`crude rate.png`** → Exported visualization of mortality trends.  
 
----
-
-## 📈 Visualizations
-
-### Crude Mortality Rate in New York (2018–2023)
-![Crude Mortality Rate](crude%20rate.png)  
-*Figure 1. Crude mortality rate per 100,000 population in New York, showing fluctuations and the impact of COVID-19 in 2020–2021.*
 
 ---
 
