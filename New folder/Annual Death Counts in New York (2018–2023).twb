@@ -1,0 +1,932 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ny_mortality_clean' inline='true' name='federated.0ur1fiw0a29as617jx4kz1qmcl8i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ny_mortality_clean' name='textscan.0my22nw15orxx719sgml50u3n8um'>
+            <connection class='textscan' directory='C:/Users/sudha/Downloads' filename='ny_mortality_clean.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0my22nw15orxx719sgml50u3n8um' name='ny_mortality_clean.txt' table='[ny_mortality_clean#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='Census Region' ordinal='0' />
+            <column datatype='real' name='Deaths' ordinal='1' />
+            <column datatype='real' name='Population' ordinal='2' />
+            <column datatype='real' name='Crude Rate' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Census Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Census Region]</local-name>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias>Census Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ny_mortality_clean.txt_2C4E980DCEBC4380866B4A217397F7AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_clean.txt_2C4E980DCEBC4380866B4A217397F7AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_clean.txt_2C4E980DCEBC4380866B4A217397F7AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crude Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Crude Rate]</local-name>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias>Crude Rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_clean.txt_2C4E980DCEBC4380866B4A217397F7AC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ny_mortality_clean.txt' datatype='table' name='[__tableau_internal_object_id__].[ny_mortality_clean.txt_2C4E980DCEBC4380866B4A217397F7AC]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ny_mortality_clean.txt' id='ny_mortality_clean.txt_2C4E980DCEBC4380866B4A217397F7AC'>
+            <properties context=''>
+              <relation connection='textscan.0my22nw15orxx719sgml50u3n8um' name='ny_mortality_clean.txt' table='[ny_mortality_clean#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='string' name='Census Region' ordinal='0' />
+                  <column datatype='real' name='Deaths' ordinal='1' />
+                  <column datatype='real' name='Population' ordinal='2' />
+                  <column datatype='real' name='Crude Rate' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ny_mortality_clean (2)' inline='true' name='federated.0x9npyb0jo1fbi11qjmwb0tiwen5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ny_mortality_clean' name='textscan.1d3hw4p0jmblg30zjajq21psd3nn'>
+            <connection class='textscan' directory='C:/Users/sudha/Downloads' filename='ny_mortality_clean.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1d3hw4p0jmblg30zjajq21psd3nn' name='ny_mortality_clean.txt' table='[ny_mortality_clean#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='Census Region' ordinal='0' />
+            <column datatype='real' name='Deaths' ordinal='1' />
+            <column datatype='real' name='Population' ordinal='2' />
+            <column datatype='real' name='Crude Rate' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Census Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Census Region]</local-name>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias>Census Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crude Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Crude Rate]</local-name>
+            <parent-name>[ny_mortality_clean.txt]</parent-name>
+            <remote-alias>Crude Rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ny_mortality_clean.txt' datatype='table' name='[__tableau_internal_object_id__].[ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sudha/AppData/Local/Temp/TableauTemp/#TableauTemp_1f5oksm1hbhghj1gmayah0vm0zga.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/21/2025 07:08:19 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Census Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Census Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Census Region</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ny_mortality_clean.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ny_mortality_clean.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ny_mortality_clean.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crude Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Crude Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Crude Rate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ny_mortality_clean.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ny_mortality_clean.txt' id='ny_mortality_clean.txt_8631C9DDEAD94C34A1E09F20D2813E3B'>
+            <properties context=''>
+              <relation connection='textscan.1d3hw4p0jmblg30zjajq21psd3nn' name='ny_mortality_clean.txt' table='[ny_mortality_clean#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='string' name='Census Region' ordinal='0' />
+                  <column datatype='real' name='Deaths' ordinal='1' />
+                  <column datatype='real' name='Population' ordinal='2' />
+                  <column datatype='real' name='Crude Rate' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ny_mortality_by_year' inline='true' name='federated.04amguq11hfbfp121llnc04wijiw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ny_mortality_by_year' name='textscan.1kb59n91unzvht169ibjw1wsp2rq'>
+            <connection class='textscan' directory='C:/Users/sudha/Downloads' filename='ny_mortality_by_year.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1kb59n91unzvht169ibjw1wsp2rq' name='ny_mortality_by_year.csv' table='[ny_mortality_by_year#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='Year' ordinal='0' />
+            <column datatype='real' name='Year Code' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='real' name='State Code' ordinal='3' />
+            <column datatype='string' name='Cause of death' ordinal='4' />
+            <column datatype='string' name='Cause of death Code' ordinal='5' />
+            <column datatype='real' name='Deaths' ordinal='6' />
+            <column datatype='real' name='Population' ordinal='7' />
+            <column datatype='real' name='Crude Rate' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Code</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Year Code]</local-name>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias>Year Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State Code</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State Code]</local-name>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias>State Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cause of death</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cause of death]</local-name>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias>Cause of death</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cause of death Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cause of death Code]</local-name>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias>Cause of death Code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crude Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Crude Rate]</local-name>
+            <parent-name>[ny_mortality_by_year.csv]</parent-name>
+            <remote-alias>Crude Rate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[State Code]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='real' name='[Year Code]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='ny_mortality_by_year.csv' datatype='table' name='[__tableau_internal_object_id__].[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sudha/AppData/Local/Temp/TableauTemp/#TableauTemp_0af9mzj1vg7ebo134g4ee06uluic.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/21/2025 07:37:44 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ny_mortality_by_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year Code</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Year Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ny_mortality_by_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ny_mortality_by_year.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State Code</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[State Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ny_mortality_by_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cause of death</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Cause of death]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cause of death</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ny_mortality_by_year.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>938</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cause of death Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Cause of death Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cause of death Code</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ny_mortality_by_year.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>939</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ny_mortality_by_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>519</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ny_mortality_by_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crude Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Crude Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Crude Rate</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ny_mortality_by_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>122</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ny_mortality_by_year.csv' id='ny_mortality_by_year.csv_43D28B922B9F484EA2072D1D7BB4D9B2'>
+            <properties context=''>
+              <relation connection='textscan.1kb59n91unzvht169ibjw1wsp2rq' name='ny_mortality_by_year.csv' table='[ny_mortality_by_year#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='Year' ordinal='0' />
+                  <column datatype='real' name='Year Code' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='real' name='State Code' ordinal='3' />
+                  <column datatype='string' name='Cause of death' ordinal='4' />
+                  <column datatype='string' name='Cause of death Code' ordinal='5' />
+                  <column datatype='real' name='Deaths' ordinal='6' />
+                  <column datatype='real' name='Population' ordinal='7' />
+                  <column datatype='real' name='Crude Rate' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ny_mortality_by_year' name='federated.04amguq11hfbfp121llnc04wijiw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04amguq11hfbfp121llnc04wijiw'>
+            <column datatype='real' name='[Crude Rate]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crude Rate]' derivation='Sum' name='[sum:Crude Rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.04amguq11hfbfp121llnc04wijiw].[sum:Crude Rate:qk]</rows>
+        <cols>[federated.04amguq11hfbfp121llnc04wijiw].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{7E9B6985-E4CD-422E-B895-4840A3463B6D}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ny_mortality_by_year' name='federated.04amguq11hfbfp121llnc04wijiw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04amguq11hfbfp121llnc04wijiw'>
+            <column datatype='real' name='[Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' name='[Year Code]' role='dimension' type='ordinal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year Code]' derivation='None' name='[none:Year Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.04amguq11hfbfp121llnc04wijiw].[none:State:nk]' />
+              <wedge-size column='[federated.04amguq11hfbfp121llnc04wijiw].[sum:Deaths:qk]' />
+              <size column='[federated.04amguq11hfbfp121llnc04wijiw].[sum:Deaths:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.04amguq11hfbfp121llnc04wijiw].[none:Year Code:ok]</cols>
+      </table>
+      <simple-id uuid='{C478C93A-57BD-45C9-A1B8-DBFC13259D4D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04amguq11hfbfp121llnc04wijiw].[none:Cause of death:nk]</field>
+            <field>[federated.04amguq11hfbfp121llnc04wijiw].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1F23ABC8-AB69-438B-9CE0-91298461F0B5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04amguq11hfbfp121llnc04wijiw].[none:State:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.04amguq11hfbfp121llnc04wijiw].[sum:Deaths:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04amguq11hfbfp121llnc04wijiw].[none:Cause of death Code:nk]</field>
+            <field>[federated.04amguq11hfbfp121llnc04wijiw].[none:Cause of death:nk]</field>
+            <field>[federated.04amguq11hfbfp121llnc04wijiw].[none:State:nk]</field>
+            <field>[federated.04amguq11hfbfp121llnc04wijiw].[none:Year Code:ok]</field>
+            <field>[federated.04amguq11hfbfp121llnc04wijiw].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B2512620-7C36-45E9-94F4-9EF0E95A633B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAASwUlEQVR4nO3d2XNcZ5nH8e85pxetrX21JdtabHmJ7ExMMmSBMJlJIJBJGKBqYBhqqKFm
+      uZm54mLmhlRN1fwfVE2FQFJAQYVKUQkkkGCYhCS2ZS0ttaXW2lpbUku9nvO+c+GRiMFSLOl0
+      94nP87lyWfLx02+/v37P+rShtdYI4VNmuQsQopyKHgClFG4tMo7juLIdNyilUEqVu4xdXhob
+      8FY9juPsOQdLsgK4FQAv7a15qRaQevazXy2yCyR8TQIgfE0CIHxNAiB8TQIgfE0CIHxNAiDu
+      aVpr5ldSxOaSFOw/vTYRKENNQhSd1pqN7Rwvvj7E6PQKtVVhkqkMF/vaudTXxsW+doKWiVHs
+      e4F2rpaa5tEXG9u2CQS8kVnHcTAMw5XX5QYvjQ2Ut56NrSyvXBnn7aEZnnn4NJ+51E0oFCST
+      t3lvbIHfDs8ytbBOd1udBOCwJAD7K0c9BdvhjQ/ivHIlykNnj/H5T54mUh3Gtm0sy8IwjN3f
+      zeZtYnNrEoDDkgDsr5T1OI7iyvAsL78xzKmOBr7+5H00Rapuq+WPA7DjwBU6dp5EYonmtg4M
+      J8taKkd7SyPJlUUCVfXUVFjMLyzR3tGBZf7pfyiEW7TWjMRXeOmNYSrDAf79yw9xqqPhQNs4
+      8AqwndrA0QZT0zNYWlFfEyJvVJJ1wE5vUhkyqWtoYC3lcKb3uKwAJeKlsYHi1qO1Zn41xXdf
+      vcrmdo6/feICgz1tmHt84Lq6AlRVVTE6fJ1gZT2WY9DS3sD1axOcOHue7YUsKaC3pYVkMo5S
+      ave2WDduHfbSLbZuBtsNXhobKF49S+vb/OStKBNzSZ577AwPDnRimgZKOew1xfar5cArwNrS
+      PMlUhs3tHEGdBTSNrcdYWFwGrWmuDZIuKAJVTfSfaJcVoES8NDbgbj1aa/IFh5/+JsobH0zx
+      5Cd6+avLPVSGg3ddy14rwCEOgjW27WBZFgBKaSzLRDkOmCamYeA4H/65BKAUvDQ24F49ubzN
+      Lz+Y4qdvR/nk+eP8zafOUlVxdxP/w7W4GICDkQCUhpfGBo5ej1Ka98YXePmNYbrb6vjiYwN0
+      NNUeuhbXjgGEKCatNRNza3z31auEgxb/+uzlWxes7jB53SABEJ6gtWZmaZMf/mqEtVSGrzx+
+      jsHetqJN/B0SAFFWWmtS6Tw//NUI748nePbRM3zq4gkCVml2LeUY4JDkGGB/d1PPVibPK1fG
+      +c3QNJ99sI8nHughFLSKUoscAwjPcJTirWvT/PitMe7vb+c7//A4jZHKstQiARAlo5TmndF5
+      fvDLG5zsqOc/v/4ozXVVRd/P348EQBTdzpmdl345jGEY/PNfP8DprqZylwVIAEQRaa1ZXk/z
+      3VevspTc4qt/eR+X+tr3vGenHCQAoihWNzP87LcTfDCxyJcfP8cnzx8v2Zmdg5CzQIckZ4Hu
+      LFewefV3E/z8nRhPPNDDUw/2Ul0RKmtNchZIFF2uYPPrq9P85O0xLvW389/f+gx1tVUf/Q/L
+      TAIgjkRrzdDkEi+8NkRHUw3f/urDdLXWYdt2uUu7KxIAcShaa6Izq7zw2hCOUnzr8/fT09lQ
+      1lOahyEBEAc2v5LiR78eYW4lxZc+dZZL/e1YHjkWOigJgLhrqXSOl94Y5v3xBM88fJp/euYB
+      ggH3b10oJTkLdEh+Ogu0nc3z2rs3ef33k/zFA6d46hO9H/k0lpfeKzkLJA5FKc2VG7O8/OYw
+      50628J1vfvq2diP3AgmA+BNKad4fX+D7v7hBa0M1//F3j9LaUF3usopCAiB2aa2ZSqzz/V/c
+      wHYU33z6EgPdzR+7MzsHIQEQaK1Z3czwwmvXic0l+fsnB/mz0x2eumenWCQAPpdM3bpn573o
+      Ak//eR//8uxlQh/zMzsHceAAbK0vMz2/ghGsIGCnCVRW09rcwFj0Jla4ivZIkMTaJg1t3XS3
+      NxajZuGCgu3w2u8neeVKlEcudPFf//iZA7cbuRccqi/Q8vw06/kAKr2KNsNEqisIRlpJJ2bY
+      As6d7mE8Gqev/9RuVy439iM/3G+o3LzYGe5uxsZ2FG8PzfLKlXHOnWjmucfOUF9TUbZ6SmG/
+      Wg68AqwuxEnpavpONJHNNqEyy8TiG9QGaskW8hiGQT6fxca8bXK4NVG8cm7Za9cBYP+x0Voz
+      Gl/hhdeHqK8J829feogT7cVrN/JR9ZSaa9cBAqFK8surzC0ahFSGjYzDhUvnScxOUd3ZRVNN
+      kFh8np6eHlcKF0ejtWZyYZ3vvXaddK7AN566yOmupnv6zM5ByJXgQ/LaCnCnsVlKbvOjX48w
+      ubDOFx8b4IEznSV7KMVL75VcCfaZdLbAy28O87vhOZ555DTf/Nz9RWk3ci+QFeCQvLgCFBzN
+      L96b5NX/jfHpSyf43EN9ZXsay0vv1T3RHLdgO7x1LU7Bca/cUMDisLvCSmkwwDzCvrRhGAQD
+      7gRoczvLq7+L0d/VxFceP0dLfXlvXfi4BMAbFd4FpTVrqSyOiwHI2w6H3drO58ZRDia11nf8
+      7trDCFom3/7aI3QesoOyX31sVgDw1qeKF3eBvDI24K169lsBvPHuCVEmEgDhaxIA4WsSAOFr
+      EgDhaxIA4WsSAOFrEgDhaxIA4WsSAOFrEgDhaxIA4WsSAOFrEgDhaxIA4WsSAOFrB35iIb25
+      ytTsEpHGFgL2FsvJNGfO9nNzbIxQbSNttUFiMwm6TvXTUOt+wyUh3HTgJ8KUUtj5NGOxaYJm
+      kJPH6xgbT9Bysof04iw5A8729xCdmOXM6VO7T065wUvdxtx4JNJNXhob8FY9rnaGy20lGZ9Z
+      5uxAP7HoFIZhoBwH0zAwAK3hD3/4wwRxa6J4ZcJ5LQDgrVrAO/UYhrFnLQcOwEYyiWnA4vIG
+      tVUWE/Flzl48z1RsgkBFLd2RICOj47QdO3Xbf+zGs7OmaXrmGVyttaeeCfbS2IC36lFK7RkC
+      eSj+kOSh+P15qR55KF6IPUgAhK9JAISv7RuAXDZDNpenyIcJQpTNnkcp6eUYL/7kLbo7Wjh+
+      /2MMdEjLPXHv2XMFMK0AjpNjaPQmNT787ijhD3uuAFawgqe++DXq9RrpUlYkRAntEQDFu2/+
+      nHdWKjlWWeChJ58rbVVClMgeu0Amn3j8KRrMNOmCJuSRCxpCuG3PY4D0SpyKxnbamiIsrstO
+      kLg37RmAitbTPHr5fmorw7Q3VJWyJiFK5s77NnaaF198CdvRGOEqzj7kjbv6hHDbnVeAfJr1
+      jMbJJLEqapHrYOJedee7QZXD4tISjrr1o6bWdsKH/DI3uRu0NLw0NuCteg5+N6hp0dbWTtgy
+      CFdWY5myCyTuTXufBVoc5YWXX+HNn/2U0fmtUtYkRMnsuUZVtvRyaSDOtqqiv6O83zkrRLHc
+      MQC5rTV+/P3/YSZXQ62zwczFy/S1yqlQce+54y5QuKaRZ5/7AnU1tTTV1+A47nyZsxBes+cu
+      ULCmlfv6Osg7nXTKhTBxj9rzINgwTOobm7HXZphNZkpZkxAls+cK4GQ3eff37+EU8gxU/uHX
+      Mqk1rnwwwuOPPMzN6DBWRTVtzQ2MRm8SqKimLRIksbpBY3s3XW2NJXkRQhzWngFQTg7HivCF
+      zz5MpDa8+/eVtY20N9WhAduxcXI51pPrdPUOkE7MsLJdYHDwAuPROKqlfvf4YeeC2FF46VjE
+      zQt8bvDS2IC36tmvlr0fiAlHaIkYvPvuOzz46BM0VP/xr2pO9AygMktMxDeIBGrJFQoYBuTz
+      OWxub4zk1kTxytVFr10JBu+MzQ4v1XOgK8HO9hI/e2uYp5/+PP3NQWZWt3d/trW+ApjMzC+x
+      mVxibs3mwqXzhAobNHYc40zfSeLxBXp6uov2YoRwyx3vBdJOlh+88D2qGltZnE/w3Fe/QXPN
+      4Z4LlnuBSsNLYwPeqme/e4H2bI2onAJb2xnCFZWEQ4d/KF4CUBpeGhvwVj37BWDPCk0rSCQi
+      3SDEvc0bH19ClIkEQPiaBED4mgRA+JoEQPiaBED4mgRA+JoEQPiaBED4mgRA+JoEQPiaBED4
+      mgRA+JoEQPiaBED4mgRA+JoEQPiaBED4mgRA+NqBA+AUcly9NoTSmsW5ONeHRig4NmM3hpic
+      WSC9vsK169dZ38oWo14hXHXgx/Zt20YbCq0dkpt5+k80Mnx1mJaTPaQXZ5nchgvnzhCdmKXu
+      9Cl2mk640RlOKeXKdtygtWaPhhpl4aWxAW/Vs/Ne3en9OnAAwpXVhCwT0ICBYVg4joNpGBhw
+      6wv1DIOdb9bTWmMYhmuTxUuTDrxVj5dqAe/Us9+H1YEDsLW+Qiq1zcz8KjWVBhPxRc4NnmMy
+      FiNQUUNXJMjIaJTWzpO39c1xo3+O1hrLso68HTd4rS+Ql8YGvFWP1hrTNA/WGMst0hirNLw0
+      NuCteg7+LZFC+IQEQPiaBED4mgRA+JoEQPiaBED4mgRA+JoEQPiaBED4mgRA+JoEQPiaBED4
+      mgRA+JoEQPiaBED4mgRA+JoEQPiaBED4mgRA+JoEQPiaBED42pECsLWxxuzsHLmCw+JcnGQq
+      g3YKxGI3sZU3esIIsZ8jBWBmPkFLawvO1jIpVcH81ATR6BitrY2Mx6bdqlGIojlS45aGSA2x
+      sRsYVhUtx7rZTm+QAmpqarDUKkopHMcB3GmNuLMtL3Cz35EbvDQ24K169qvlCAFQ5HMFNBCp
+      izAzNYFhmDTXBhkZGaMi0nrb5HBronil2ZLXGmOBd8Zmh5fq2asx1pE6w+30XDRNE6UUhmFg
+      GAZKqd2JIZ3hSsNLYwPeqme/znBHqnBnwgNF+bQXothkpgpfkwAIX5MACF+TAAhfkwAIX5MA
+      CF+TAAhfkwAIX5MACF+TAAhfkwAIX5MACF+TAAhfkwAIX5MACF+TAAhfkwAIX3M9AFrZLCws
+      4EhbFPEx4HoAJsejWKZmYmrO7U0L4TrXA+AQoKW1FaOQc3vTQrjO9QCETYfRsTGMcLXbmxbC
+      da73rejqG8BxHCzLcnvTQrjO9QAYhrHbD0YptdsX6Ajth3Z9uNNcubn5utzgpbEBb9Wz8165
+      3hfoo5im6XqPIK+sLHfqh1RuXhmbHV6qxzTN0gfAbV6abHcazHLy0tiAt+rZr5YjtUYU4uPO
+      ev75558vdxEflpidYnp2FgJh4hNRlje2iVRavPPBMF3H2rkZHWF2fpHqugZCAZPJ6CjTc0s0
+      tbRiufyhrOw849EoiaU1QpbD2PhNlBkmu7FIPLFOQ5XB0OgEyc1tmhob0LlNboxP4WiD2uoq
+      d4sBUsklbk7GSecVG8tzTM8lqK+vZ2TofQLVTaRW5picmiZYVUdlOMDSXJzY1DSh6joqQ+4v
+      9jOT48zMJaioqmD0xgipbIEKy+HqSIzOtiaiI8MsLK/T0tyIYRhER4fYyhSorY1guv1e5bYZ
+      icZYWU9hFLYYj00RqIywOBNjZm6R6uoQoyNjZGyD+kgNudQaQ6NR790K0drZTUN1iGQiQW1b
+      F7VGnqxZQVVlEIB0Oo1dyGE7CuwMOaua3s4aEmtZ12sxrCD9/X0UMmkSy+ucv3Ce1NoSkcYW
+      nEIWZefIFRyymSwaSG+lyNs2gWDI9VoAquua6epoJp3eIlsw6eloYmUjRUtjHZmCYmUtxdmz
+      PcxOzQCwtpXlwkAvS0vLRann2IleKi3F8lScjrP3YeS3McM1hAOgnDQONdTpDOt5Ddhsrm9j
+      mgGKsXdkBCs53XeCXDrNyvo2g4PnWE0scKK3D9POsTif4OS5QXJbSQCm55e5b3DQewGYvRlF
+      VbXQ1dGAbTvYjiIUDGEaBlBAm9Wc7GxicyuN0qBsB7tgY7r98Q/g5Ll67QYDg4MEUP9/VgvC
+      oVsTfGttg/ZT/YTMArajqGxoY/DcALPTN92vBdhcWWB2LctA30mUcnAcG6wgocCtt7Gvp4vo
+      2AQEgrdqdRRKOUBxjldio0PUdfbQXF9JIe/gKEUoFLrVNduqoanOYGZ5g4CpUY7BxcuXyaeW
+      SGVs12vRdpprwzc5f+EcKIVybBQGo0PX6TpznuqAgW07u2cmTRQFpb0WAE3BUaRWF8lZ1RiZ
+      JFTVUdhcopDPMz2fpL42yNJGnpa6EMktTUOVwdK2SUd92PVq7EIOKxBgOj5N57FOYuMx2o4d
+      ZzY+SSGXgUgT24lpKmqbyGysk82liU2M09jc7notANl8Hl1Is7C8QWNdFYlUgeYqk/nVFOvL
+      C2xtpwmEaujvPU4yuc6xtkYmphY4fqwY9SgcpVlZmCXQfJz0fIzq+hY2lucp5PMkltfI5Qt0
+      9vRRYWfYSmeIT8ZwAjXUVLh/diifSWMFLaZn5jne0cLYeJzjXR0oDQszceo6u1iJj9PQ2slG
+      cp3uk91MjY3KQbDwN4+tAEKUlgRA+JoEQPiaBED4mgRA+JoEQPiaBED4mgRA+JoEQPja/wHI
+      /PB5CtzlKgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
